@@ -1,5 +1,12 @@
 #
 #
 #
-GET http://localhost:3000/api/v1/entries
-X-query: { amount }
+POST http://localhost:3001/graphql
+Content-Type: application/json
+X-CSRF-Token: glEL208FKdpiNKX2QnXw7Wu/Fct294gnwkFc1UYZ9HlMzmZIXjJ4oZLd/a2v4TYTyYllcryAsU4iiYZmSik63Q==
+Cookie: _azul_session=GIOoqcC7LYdmPaW%2FncgC7d69y79s3kWebXhU08UWMrF8kjjzvo0YMZqZwSz1BIoqSHJHvcPn9g1Lj5NCbj8bgpKcP3GXcEerEGEIEFtxhdyWNP6qCCHLmzj75oh6eflT42TtA7oWcYi7pafjS6I%3D--8IzLlHkRvcDr668F--gpyESGfvQ1y1dBgGNi%2FYPg%3D%3D
+
+{
+   "query":     "{\n  entry\n}\n\n",
+   "variables": null
+}
